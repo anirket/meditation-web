@@ -61,8 +61,9 @@ body{
 .vid-container {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0%;
     z-index: -1;
+    width: 100%;
 }
 
 .theme button {
@@ -111,27 +112,27 @@ body{
     }
     .time-display {
         position: absolute;
-        bottom: -33%;
+        bottom: -25%;
         font-size: 2rem;
     
     }
     .controller img{
         position: absolute;
-        top:50%;
+        top:40%;
         left:50%;
         transform: translate(-50%,-50%);
     
     }
     .controller svg{
         position: absolute;
-        top:50%;
+        top:40%;
         left:50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%) rotate(-90deg);
     
     }
     .theme button {
         margin: 15px;
-        margin-top: 80px;
+        margin-top: 40px;
         
     }
 
