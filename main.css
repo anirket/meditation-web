@@ -5,7 +5,7 @@
 
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 .app {
@@ -96,7 +96,10 @@ body{
  
     }
     .minutes button{
-        margin :20px;
+        margin-top: -80px;
+        margin-left: 10px;
+        margin-right: 20px;
+        /* margin :0px 20px 20px 20px; */
         font-size: 19px;
         padding:10px;
         outline: none;
@@ -105,34 +108,34 @@ body{
         width: 250px;
     }
     .minutes button:nth-child(1){
-        margin-left: 90px;
+        margin-left: 120px;
     }
     .minutes button:nth-child(3){
         margin-right: 90px;
     }
     .time-display {
         position: absolute;
-        bottom: -25%;
+        bottom: -12%;
         font-size: 2rem;
     
     }
     .controller img{
         position: absolute;
-        top:40%;
+        top:25%;
         left:50%;
         transform: translate(-50%,-50%);
     
     }
     .controller svg{
         position: absolute;
-        top:40%;
+        top:25%;
         left:50%;
         transform: translate(-50%,-50%) rotate(-90deg);
     
     }
     .theme button {
         margin: 15px;
-        margin-top: 40px;
+        margin-top: 9px;
         
     }
 
