@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.minutes, .controller, .theme {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.minutes button {
+    height: 4rem;
+    width: 11rem;
+    font-size: 1.5rem;
+    background: none;
+    border: 2px solid white;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.minutes button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.controller {
+    position: relative;
+}
+
+.controller svg {
+    position: absolute;
+    pointer-events: none;
+    transform: rotate(-90deg);
+}
+
+.time-display {
+    position: absolute;
+    bottom: -5%;
+    font-size: 3rem;
+
+}
+
+.vid-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.theme button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 30px;
+    border: 1px solid white;
+}
+
+.theme button img {
+    width: 100%;
+}
+
+.theme button:nth-child(1) {
+    background-color: lightseagreen;
+}
+
+.theme button:nth-child(2) {
+    background-color: lightsalmon;
+}
+
+@media only screen and (max-width:600px) {
+    .app {
+        flex-direction: column;
+    }
+    .minutes, .controller, .theme {
+      flex-direction: row;
+        justify-content: center;
+ 
+    }
+    .minutes button{
+        margin :20px;
+        font-size: 19px;
+        padding:10px;
+        outline: none;
+    }
+    .controller svg{
+        width: 250px;
+    }
+    .minutes button:nth-child(1){
+        margin-left: 90px;
+    }
+    .minutes button:nth-child(3){
+        margin-right: 90px;
+    }
+    .time-display {
+        position: absolute;
+        bottom: -33%;
+        font-size: 2rem;
+    
+    }
+    .controller img{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    
+    }
+    .controller svg{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    
+    }
+    .theme button {
+        margin: 15px;
+        margin-top: 80px;
+        
+    }
+
+}
